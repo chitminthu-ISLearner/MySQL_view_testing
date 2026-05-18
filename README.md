@@ -1,30 +1,39 @@
-# MySQL
-Designed eCommerce database schema with Customers, Products, Orders, and Order Items.
+This project demonstrates my ability to design and implement database views in MySQL for an eCommerce system. The schema models a realistic business scenario with Customers, Products, Orders, and Order Items, and the assignment focuses on creating views to simplify queries, enforce security, and support analytics.
 
-Inserted sample transactional data for realistic testing.
+--Key Highlights
+Database Setup: Designed normalized tables for customers, products, orders, and order items with proper primary and foreign keys.
 
-Created multiple SQL Views for:
+Sample Data: Inserted realistic records to simulate transactions across multiple customers and product categories.
 
-Customer info (hiding sensitive fields).
+Views Created:
 
-Completed and pending orders.
+Customer information view (hiding sensitive fields like email).
 
-Order details with JOINs (customer + product).
+Completed and pending orders views.
 
-Aggregated sales per order and monthly reports.
+Join views combining customer and product details.
 
-High-value orders and purchase summaries.
+Aggregated views for total sales per order and monthly sales reports.
 
-Security-focused views (e.g., hiding prices).
+Security-focused views (e.g., hiding product prices).
 
-Implemented advanced features:
+Analytical views such as high-value orders, purchase summaries, and top 3 expensive products.
 
-WITH CHECK OPTION for completed orders.
+--Advanced Features:
 
-Updatable views and invalid update testing.
+Implemented WITH CHECK OPTION to restrict updates to completed orders.
 
-ALGORITHM = TEMPTABLE for performance.
+Tested updatable views and invalid updates to understand constraints.
 
-Practiced view management: showing, defining, and dropping views.
+Used ALGORITHM = TEMPTABLE for performance testing.
 
-Additional analytics: top 3 expensive products, customer orders by city, products not ordered.
+Practiced view management commands (showing, defining, and dropping views).
+
+--Learning Outcomes
+Strengthened understanding of SQL Views as a tool for abstraction, security, and reporting.
+
+Gained practical experience in JOINs, aggregations, and constraints.
+
+Explored how views can support business intelligence in eCommerce systems.
+
+Practiced real-world scenarios like hiding sensitive data, summarizing sales, and enforcing business rules.
